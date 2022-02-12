@@ -65,6 +65,7 @@ productButton.addEventListener('click', function (event) {
     let tableRow = document.createElement('tr');
     let productName = tableDataCreator(nameProduct);
     let productPrice = tableDataCreator(priceProduct);
+    let productPiecePrice=tableDataCreator(priceProduct);
     let productQuantity = tableDataCreator(quantityProduct);
     if (priceProduct > 0 && quantityProduct > 0) {
         let total = parseFloat(priceProduct) * parseFloat(quantityProduct);
@@ -79,7 +80,8 @@ productButton.addEventListener('click', function (event) {
         let ID = tableDataCreator(count);
         tableRow.appendChild(ID);
         tableRow.appendChild(productName);
-        tableRow.appendChild(productQuantity);
+        tableRow.appendChild(productPiecePrice);
+        tableRow.appendChild(productQuantity);        
         tableRow.appendChild(productPrice);
         tableBody.appendChild(tableRow);
     } else {

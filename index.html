@@ -71,8 +71,8 @@
         <h1 class="text-center">Product Details</h1>
        <div class="form d-flex flex-column mx-auto w-50 gap-3">
         <input type="text" name="" id="product-name" placeholder="Product Name">
-        <input type="number" name="" id="product-price" placeholder="Product Price" value="1">
-        <input type="number" name="" id="product-quantity" placeholder="Product Quantity" value="1">
+        <input type="number" name="" id="product-price" placeholder="Product Price" >
+        <input type="number" name="" id="product-quantity" placeholder="Product Quantity">
         <button class="btn btn-primary" id="product-button">Submit</button>
        </div>
     </section>
@@ -82,6 +82,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
+                    <th>Price per piece</th>
                     <th>Quantity</th>
                     <th>Price</th>
                 </tr>
@@ -91,16 +92,16 @@
             </tbody>
             <tbody class="">
               <tr>
-                <td colspan="3" class="text-end fw-bold">SubTotal</td>
+                <td colspan="4" class="text-end fw-bold">SubTotal</td>
                 <td class="text-right" >$<span id="sub-total">0</span></td>
             </tr>
             <tr>
-                <td colspan="3" class="text-end fw-bold">Tax</td>
-                <td class="text-right" >$ <span id="tax">0</span></td>
+                <td colspan="4" class="text-end fw-bold">Tax</td>
+                <td class="text-right" >$<span id="tax">0</span></td>
             </tr>
             <tr>
-                <td colspan="3" class="text-end fw-bold">Grand Total</td>
-                <td class="text-right fw-bold" >$ <span id="grand-total">0</span> </td>
+                <td colspan="4" class="text-end fw-bold">Grand Total</td>
+                <td class="text-right fw-bold" >$<span id="grand-total">0</span> </td>
             </tr>
             </tbody>
         </table>
