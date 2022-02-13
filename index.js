@@ -74,7 +74,7 @@ productButton.addEventListener('click', function (event) {
         let grandTotal = grand + taxAmount;
         subTotal.innerText = grand;
         tax.innerText = taxAmount.toPrecision(2);
-        grandTotalId.innerText = grandTotal;
+        grandTotalId.innerText = Math.round(grandTotal);
         productPrice.innerText = total;
         ++count;
         let ID = tableDataCreator(count);
@@ -115,7 +115,6 @@ function variableCreator(parameter) {
 // value returner
 function myInputValue(parameter) {
     let p = parameter.value;
-    parameter.value='';
     return p;
 }
 
